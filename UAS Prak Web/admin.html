@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin.html</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+          <img src="Logo.png" alt="Left Image" width="200px">
+        </div>
+        <div class="right">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Now Playing</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign-Up</a></li>
+            </ul>
+            <div class="nav_icons">
+                <h1>Admin</h1>
+                <img src="lock.png" alt="" width="25px">
+            </div>
+        </div>
+      </header>
+      <section class="content">
+        <div class="addfilm">
+            <div class="button_items">
+                <a href="#">Film</a>
+            </div>
+            <div class="button_items">
+                <a href="#"><img src="plus-sign.png" alt="" width="50px" top="10px"></a>
+            </div>
+        </div>
+        
+        <div class="editfilm">
+            <div class="edit_items">
+                <img src="./6.jpg" alt="" class="img_items">
+                <div class="edit_form"> 
+                    <form action="" method="post">
+                        <input type="hidden" name="FilmId" value="<?= $row["FilmId"];?>">
+
+                        <label for="judul">Judul :</label>
+                        <input type="text" name="judul" ><br>
+                        <label for="duras">Durasi:</label>
+                        <input type="text" name="durasi" ><br>
+                        <label for="genre">Genre :</label>
+                        <input type="text" name="genre">
+                        <button type="button">Edit</button>
+                        <button type="button">Hapus</button>
+                    </form>
+                </div>
+            </div>
+            <div class="edit_items">
+                <img src="./6.jpg" alt="" class="img_items">
+                <div class="edit_form"> 
+                    <form action="" method="post">
+                        <label for="judul">Judul :</label>
+                        <input type="text" name="judul" ><br>
+                        <label for="duras">Durasi:</label>
+                        <input type="text" name="durasi" ><br>
+                        <label for="genre">Genre :</label>
+                        <input type="text" name="genre">
+                        <button type="button">Edit</button>
+                        <button type="button">Hapus</button>
+                    </form>
+                </div>
+            </div>
+            <div class="edit_items">
+                <img src="./6.jpg" alt="" class="img_items">
+                <div class="edit_form"> 
+                    <form action="" method="post">
+                        <label for="judul">Judul :</label>
+                        <input type="text" name="judul" ><br>
+                        <label for="duras">Durasi:</label>
+                        <input type="text" name="durasi" ><br>
+                        <label for="genre">Genre :</label>
+                        <input type="text" name="genre">
+                        <button type="button">Edit</button>
+                        <button type="button">Hapus</button>
+                    </form>
+                </div>
+            </div>
+            <div class="edit_items">
+                <img src="./6.jpg" alt="" class="img_items">
+                <div class="edit_form"> 
+                    <form action="" method="post">
+                        <label for="judul">Judul :</label>
+                        <input type="text" name="judul"><br>
+                        <label for="duras">Durasi:</label>
+                        <input type="text" name="durasi"><br>
+                        <label for="genre">Genre :</label>
+                        <input type="text" name="genre">
+                        <button type="button">Edit</button>
+                        <button type="button">Hapus</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="userlist">
+        <h1>User List</h1>
+        <div class="list_items">
+            <div class="name_user">
+                <span>Alfa</span>
+            </div>
+            <div class="add_user">
+                <a href="#"><img src="./plus-sign.png" alt="" width="40px"></a>
+            </div>
+            <div class="min_user">
+                <a href="#"><img src="./minus.png" alt="" width="40px"></a>
+            </div>
+        </div>
+      </section>
+</body>
+</html>

@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  body {
+    width: 100%;
+    color : rgb(0, 0, 0);
+    min-height: 800px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    font-family: 'MyCustomFont';
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    
+    .right img {
+      margin-left: 10px;
+    }
+    
+    .imgpad {
+      padding: 0 5px;
+    }
+    
+  .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 20px;
+    display: block;
+  }
+  img {
+    margin-right: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+      display: flex;
+      list-style-type: none;
+  }
+  
+  ul li a{
+      color: #3a3a3a;
+  }
+  
+  li a::after{
+      content: '';
+      display: block;
+      height: 4px;
+      width: 0;
+      background-color: #129E1C;
+      transition:all .5s;
+  }
+  
+  li a:hover::after{
+      width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+  
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    } 
+  }
+  .date{
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  .date .judul{
+    margin-left: 10px;
+    font-weight: 1000;
+    font-size: 60px;
+  
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  .date_items{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,200px);
+    justify-content: space-around;
+    text-align: center;
+  }
+  .date_items label{
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    position: relative;
+    color: #129E1C;
+    font-family:'Poppins',sans-serif;
+    font-size: 20px;
+    border: 2px solid #129E1C;
+    border-radius: 30px;
+    padding: 10px;;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+  }
+ 
+  input[type="radio"]:checked +  .items{
+    background-color: #129E1C;
+    color: aliceblue;
+  }
+
+  .place{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+  }
+  .place_item{
+    
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-color: #ddd;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .place_item label{
+    cursor: pointer;
+    display: block;
+    color: #010101;
+    font-weight: 800;
+    font-family:'Poppins',sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 10px 15px;
+  }
+
+  input[type="radio"]:checked +  .items_title{
+    margin: 10px;
+    background-color: #3a3a3a;
+    color: aliceblue;
+  }
+  .place_item label span{
+    color: #15dd3d;
+  }
+  
+  .times{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100px);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .times label{
+    margin: 5px;
+    background-color: #eee;
+    color: #010101;
+    font-family:'Poppins',sans-serif;
+    font-size: 15px;
+    border-radius: 30px;
+  }
+  input[type="radio"]:checked +  .items_times{
+    background-color: #129E1C;
+    color: aliceblue;
+  }
+  .button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .pilihbangku {
+    width: 40%;
+    border-radius: 40px;
+    background-color: #15dd3d;
+    padding: 30px;
+  }
+  
+  .pilihbangku button {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #eee;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .pilihbangku button:hover {
+    color: #3a3a3a;
+  }
+  .info{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .info .price{
+    background-color: #aaa;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+  }
+  .info .title_price{
+
+    border-radius: 15px;
+    color: #eee;
+    border-bottom: 5px solid #333;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .info .no_price{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: fit-content;
+  }
+  .info .no_price span{
+    font-weight: 800;
+  }
+  .info .no_kursi{
+    background-color: #aaa;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .info .title_kursi{
+    border-radius: 15px;
+    color: #eee;
+    border-bottom: 5px solid #333;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .info .no_kursi_items{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: left;
+  }
+  .info .no_kursi_items input[type="number"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #aaa;
+    font-size: 15px;
+    border-bottom: 3px solid #eee;
+    width: 100%;
+  }
+  .info .jumlah{ 
+    background-color: #aaa;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+  }
+  .info .title_jumlah{
+
+    border-radius: 15px;
+    color: #eee;
+    border-bottom: 5px solid #333;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .info .no_jumlah{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: fit-content;
+  }

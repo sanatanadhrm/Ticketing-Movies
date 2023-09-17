@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  color : rgb(0, 0, 0);
+  min-height: 2000px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  font-family: 'MyCustomFont';
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .right img {
+    margin-left: 10px;
+  }
+  
+  .imgpad {
+    padding: 0 5px;
+  }
+  
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 20px;
+  display: block;
+  font-size: 18;
+}
+
+img {
+  margin-right: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a{
+    color: #3a3a3a;
+}
+
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: #129E1C;
+    transition:all .5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+.slideshow{
+  display: flex;
+  align-items: center;
+  /* background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  overflow: hidden;
+  height: 100vh;
+}
+.container {
+  height: 120vh;
+  width: 100%;
+  align-items: center;
+}
+
+/* Slideshow container */
+/* .content-slide {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.imgslide {
+  display: flex;
+}
+*/
+
+.imgslide img {
+  height: 120vh;
+  width:100%;
+
+} 
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 254, 224);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  color: #fafafa;
+  padding : 12px 12px;
+  font-size: 40px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align:left;
+}
+
+.content-slide .numberslide {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* resposive */
+
+@media screen and (max-width: 800px) {
+
+  .content-slide {
+      padding: 8px 50px 12px 50px;
+  }
+
+  .next {
+      right: 50px;
+      border-radius: 3px 0 0 3px;
+  }
+  
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .4;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: .4;
+  }    
+  to {
+      opacity: 1;
+  }
+}
+
+.nowplaying{
+  display: block;
+  background-color: #eee;
+  text-align: center;
+
+}
+.nowplaying   a{
+  
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 1000;
+  color: #000;
+}
+.nowplaying .title_nowplay span{
+  color: #129E1C;
+}
+.movie {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin : 10px 10px;
+  grid-template-columns: 350px 350px 350px 350px;
+  grid-template-rows: auto auto;
+  padding: 20px 20px;
+  padding-bottom: 10px;
+}
+.movie .item {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.movie .item img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: .5s ease;
+}
+.movie .item h3 {
+  margin-top: 10px;
+}
+
+.movie .item a img:hover{
+  opacity: .3;
+}
+.movie .iten .genre{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+.genre li{
+  text-align: center;
+  border-radius: 15px;
+  background-color: #333;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px;
+
+}
+.genre li span{
+ color: #eee;
+}
+
+.partners{
+  display: block;
+  justify-content: left;
+  padding-left: 20px;
+}
+.partners h1{
+  font-size: 30px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+.logo-partner{
+  display: grid;
+  margin : 10px 100px;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: auto auto;
+  padding: 20px 20px;
+}
+.logo-tagline{
+
+
+}
+.logo-partner .logo_item{
+
+}
+
+.footer{
+}
+
+.content-footer{
+  display:flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.logo-tagline, .feature, .aboutus {
+  flex-basis: 33.33%;
+
+}
+
+.logo-tagline{
+  padding: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.feature{
+  padding-left: 40px;
+  justify-content: center;
+  align-items: center;
+  line-height: 3;
+  width: 300px;
+  display: grid;
+  grid-template-areas: fitur fitur;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutus{
+  text-align: right;
+  width: 300px;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('./brandon-grotesque-black-58a8a3e824392.otf') format('truetype');
+
+  font-family: 'MyCustomFont2';
+  src: url('./Avenir\ LT\ Std\ 55\ Roman.otf') format('truetype');
+}

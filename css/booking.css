@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  body {
+    display: block;
+    width: 100%;
+    color : rgb(0, 0, 0);
+    min-height: 1100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    font-family: 'MyCustomFont';
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    
+    .right img {
+      margin-left: 10px;
+    }
+    
+    .imgpad {
+      padding: 0 5px;
+    }
+    
+  .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 20px;
+    display: block;
+  }
+  img {
+    margin-right: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+      display: flex;
+      list-style-type: none;
+  }
+  
+  ul li a{
+      color: #3a3a3a;
+  }
+  
+  li a::after{
+      content: '';
+      display: block;
+      height: 4px;
+      width: 0;
+      background-color: #129E1C;
+      transition:all .5s;
+  }
+  
+  li a:hover::after{
+      width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+  
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    } 
+  }
+  .judul{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .judul_film{
+    font-size:3.4rem;
+    font-weight: 700;
+  }
+  .seat{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 0;
+    margin-top: 10px;
+    height: 65vh;
+    display: flex;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .subseat1{
+    margin: 0 -100px 0 100px;
+    width: min-content;
+    height: min-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:1fr 1fr;
+  }
+  .subseat2{
+    width: min-content;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .subseat3{
+    margin: 0 100px 0 -100px;
+    width: min-content;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .rowseat{
+    display: flex;
+    width: 10%;
+    height: fit-content;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25px;
+    margin: 10px;
+    color: #eee;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .info{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .info .price{
+    background-color: #aaa;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+  }
+  .info .title_price{
+
+    border-radius: 15px;
+    color: #eee;
+    border-bottom: 5px solid #333;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .info .no_price{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: fit-content;
+  }
+  .info .no_price span{
+    font-weight: 800;
+  }
+  .info .no_kursi{
+    background-color: #aaa;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .info .title_kursi{
+    border-radius: 15px;
+    color: #eee;
+    border-bottom: 5px solid #333;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .info .no_kursi_items{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: left;
+  }
+  .info .no_kursi_items input[type="text"]{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #aaa;
+    font-size: 15px;
+    border-bottom: 3px solid #eee;
+    width: 100%;
+  }
+  .info .jumlah{
+    background-color: #aaa;
+    padding: 10px;
+    border-bottom: 5px solid #333;
+    border-radius: 10px;
+    width: 30%; 
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+  }
+  .info .title_jumlah{
+
+    border-radius: 15px;
+    color: #eee;
+    border-bottom: 5px solid #333;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+  .info .no_jumlah{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    height: fit-content;
+  }
+  .button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .pilihbangku {
+    width: 40%;
+    border-radius: 40px;
+    background-color: #15dd3d;
+    padding: 30px;
+  }
+  
+  .pilihbangku button {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #eee;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .pilihbangku button:hover {
+    color: #3a3a3a;
+  }
+  

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  body {
+    color : rgb(0, 0, 0);
+    min-height: 3000px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    font-family: 'MyCustomFont';
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    
+    .right img {
+      margin-left: 10px;
+    }
+    
+    .imgpad {
+      padding: 0 5px;
+    }
+    .nav_icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #aaa;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .nav_icons h1{
+        color: #010101;
+    }
+    
+  .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 20px;
+    display: block;
+    font-size: 30px;
+  }
+  
+  img {
+    margin-right: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+      display: flex;
+      list-style-type: none;
+  }
+  
+  ul li a{
+      color: #3a3a3a;
+  }
+  
+  li a::after{
+      content: '';
+      display: block;
+      height: 4px;
+      width: 0;
+      background-color: #129E1C;
+      transition:all .5s;
+  }
+  
+  li a:hover::after{
+      width: 100%;
+  }
+
+  .content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .addfilm{
+    display: flex;
+    margin-top: 125px;
+    justify-content: left;
+    align-items: left;
+  }
+  .button_items a{
+    font-weight: 800;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color: #010101;
+  }
+  .addfilm .button_items{
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #ddd;
+    margin-left: 40px;
+    border: 1px solid #aaa;
+  }
+.editfilm{
+    display: grid;
+    grid-template-columns: 10fr 10fr ;
+    margin-top: 30px;
+}
+.edit_items{
+    display: flex;
+    background-color: #eee;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    
+}
+.edit_items .img_items{
+    border-radius: 10px;
+    width: 320px;
+    height: 400px;
+}
+.edit_form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.edit_form form label{
+    font-family: 'Times New Roman', Times, serif;
+    color: #010101;
+    text-align: left;
+    font-size: 35px;
+}
+.edit_form form input{
+    background-color: transparent;
+    color: #333;
+    border: none;
+    border-bottom: 3px solid #010101;
+    padding: 8px 10px ;
+    font-size: 30px;
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+}
+.edit_form form button{
+    width: 150px;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: #aaa;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.edit_form form button:hover{
+    background-color: #333;
+}
+
+.userlist{
+    display: block;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.userlist h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 800;
+    background-color: #aaa;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.userlist .list_items{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+
+}
+.name_user span{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.name_user{
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #3a3a3a;
+    background-color: #aaa;
+}
+.add_user{
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #3a3a3a;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+    background-color: #aaa;
+    transition: all 1s;
+}
+.min_user{
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #3a3a3a;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+    background-color: #aaa;
+    transition: all 1s;
+}
+.add_user:hover{
+    background-color: #3a3a3a;
+}
+.min_user:hover{
+    background-color: #333;
+}

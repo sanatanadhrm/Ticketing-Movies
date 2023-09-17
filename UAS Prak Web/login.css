@@ -1,0 +1,77 @@
+
+body {
+    background-image: url('./colapse.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 400px;
+    background-color: rgba(255,255,255,.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container img {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.login form label{
+    font-family: 'Times New Roman', Times, serif;
+    color: #fafafa;
+    text-align: left;
+}
+.container input[type="text"],
+.container input[type="password"] {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    border-bottom: 3px solid #129E1C;
+    padding: 8px 10px ;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+}
+.container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #7ad980;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #129E1C;  
+}
+
+.container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container p a {
+    color: #191825;
+}
+
+.container p a:hover {
+    text-decoration: underline;  
+    color: red;
+}
